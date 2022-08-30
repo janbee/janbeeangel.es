@@ -1,0 +1,27 @@
+.profile-wrap {
+  .name {
+    font-size: 30px;
+    margin-bottom: 18px;
+    font-weight: bold;
+  }
+
+  .intro {
+
+    .quote {
+      color: #3393cb;
+      font-size: 30px;
+      font-weight: bold;
+      position: absolute;
+      padding-top: 5px;
+    }
+
+    .text {
+      padding-left: 12px;
+      white-space: pre-line
+    }
+
+    b {
+      color: #3393cb;
+    }
+  }
+}

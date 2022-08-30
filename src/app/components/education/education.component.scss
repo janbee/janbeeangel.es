@@ -1,0 +1,35 @@
+.education-wrap {
+  margin-top: 50px;
+
+  .content-wrap {
+    flex-direction: column;
+    flex: 1;
+
+    .school-wrap {
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .school-name {
+          font-weight: bold;
+          font-size: 18px;
+        }
+
+        .date {
+          color: #3393cb;
+          font-weight: bold;
+        }
+      }
+
+      .course {
+        margin-top: 5px;
+        white-space: pre-line;
+
+        span {
+          color: #3393cb;
+        }
+      }
+    }
+  }
+}
