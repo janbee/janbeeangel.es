@@ -1,0 +1,144 @@
+{
+  "name": "<jan albee angeles />",
+  "intro": "A web developer with over 10 years of professional experience. Specializing in front-end development, well-versed in numerous frameworks such as <b>react</b>, <b>angular</b> and <b>nodejs</b>.\n\nThrives in an environment that constantly embraces new techniques and technologies and always looking forward to working on an exciting project with an equally exciting team.",
+  "contacts": [
+    {
+      "text": "janbeeangeles@gmail.com",
+      "icon": "google"
+    },
+    {
+      "text": "+1 647 673 4886",
+      "icon": "mobile alternate"
+    },
+    {
+      "text": "in/janbeeangeles",
+      "icon": "linkedin"
+    },
+    {
+      "text": "live:janbeeangeles",
+      "icon": "skype"
+    }
+  ],
+  "workExperiences": [
+    {
+      "company": "Robots & Pencils",
+      "position": "Frontend Developer",
+      "duration": "Mar 2021 - Present",
+      "jobDescription": "Handles component creation, theming, responsive layout, unit/automated testing, and API/UI integrations. Projects were built on versions with module federation. Incl. SkillsMatrix(<span>React</span>), CourseLandingPage(<span>AngularMicroFE</span>) and CourseAssessments(<span>Angular</span>)."
+    },
+    {
+      "company": "GHD Pty Ltd",
+      "position": "Frontend Developer",
+      "duration": "Sept 2018 - Feb 2021",
+      "jobDescription": "Handles component creation, and API/UI integrations. Projects were built on Angular and KendoUI. Incl, GHD Navigator(<span>Angular</span>), PSF(<span>Angular</span>), ResourceMarketPlace(<span>Angular</span>), PeopleFinder(<span>React</span>), and FileUploader(<span>Vue</span>)."
+    },
+    {
+      "company": "uPraxis Global Limited",
+      "position": "Frontend Developer",
+      "duration": "Feb 2017 - Sept 2018",
+      "jobDescription": "Handles component creation, and API/UI integrations. Project was built on AngularJS and MaterialUi. Solutio(<span>AngularJS</span>)."
+    },
+    {
+      "company": "Outsourcely",
+      "position": "Web Developer",
+      "duration": "Jan 2015 - Feb 2017",
+      "jobDescription": "Handles page creation, PSD to HTML designs, and API/UI integrations. Project was built on CodeIgniter, and jQuery. Outsourcely(<span>CodeIgniter</span>)."
+    },
+    {
+      "company": "Japkin",
+      "position": "Web/PhoneGap Developer",
+      "duration": "Aug 2013 - Jan 2015",
+      "jobDescription": "Handles page creation, PSD to HTML designs, flash technologies for video/audio recording with cross-browser compatibility, and API/UI integrations. Project was built on Wordpress, jQuery, and PhoneGap. Japkin(<span>Wordpress</span>), and JapkinMobile(<span>PhoneGap</span>)."
+    },
+    {
+      "company": "(P34) p3ople4u Inc.",
+      "position": "Web/PhoneGap Developer",
+      "duration": "Oct 2012 - Aug 2013",
+      "jobDescription": "Handles API/UI integrations, been heavily involved with social media login integrations, maintains and updates pages of existing Job Recruitment website. A PhoneGap project that shows Gasoline stations on a map. PumpItApp(<span>PhoneGap</span>)."
+    },
+    {
+      "company": "jMango",
+      "position": "Web Developer",
+      "duration": "Aug 2011 - Sept 2012",
+      "jobDescription": "Maintains and updates pages of existing websites, been heavily involved with CSS3 animations and performance enhancements."
+    },
+    {
+      "company": "HSBC Electronic Data Processing",
+      "position": "Web Developer",
+      "duration": "Jul 2010 - Aug 2011",
+      "jobDescription": "Handles page/widget creation, and API/UI integrations. Project was built on VanillaJs and jQuery. ContentManagementSystem(<span>VanillaJs/jQuery</span>)"
+    },
+    {
+      "company": "Escentrics IT Solutions",
+      "position": "Web Developer",
+      "duration": "Aug 2009 - Jul 2010",
+      "jobDescription": "Handles page/widget creation, been heavily involved with HTML, CSS, and JS for customizing websites. Projects were built on WordPress and Joomla. Sanctuaryo(<span>Joomla</span>), IlocosSur(<span>Joomla</span>) and PhilippinePetFinder(<span>Wordpress</span>)"
+    }
+  ],
+  "skills": [
+    {
+      "name": "HTML / CSS ",
+      "level": 9
+    },
+    {
+      "name": "Angular",
+      "level": 8
+    },
+    {
+      "name": "ReactJs / ReactNative",
+      "level": 7
+    },
+    {
+      "name": "Lodash / RxJs",
+      "level": 7
+    },
+    {
+      "name": "Git / SourceTree",
+      "level": 7
+    },
+    {
+      "name": "VueJs",
+      "level": 6
+    },
+    {
+      "name": "NodeJs",
+      "level": 5
+    },
+    {
+      "name": "MySql / Sequelize",
+      "level": 5
+    },
+    {
+      "name": "Photoshop",
+      "level": 5
+    },
+    {
+      "name": "Cypress / Puppeteer",
+      "level": 6
+    },
+    {
+      "name": "Joomla",
+      "level": 4
+    },
+    {
+      "name": "jQuery / jQueryUi",
+      "level": 4
+    },
+    {
+      "name": "WordPress",
+      "level": 4
+    },
+    {
+      "name": "AngularJs",
+      "level": 4
+    },
+    {
+      "name": "Firebase / Firestore",
+      "level": 4
+    },
+    {
+      "name": "MongoDb Cloud",
+      "level": 4
+    }
+  ]
+}
