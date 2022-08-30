@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/build/static/css/main.b25d6f16.css",
-    "main.js": "/build/static/js/main.8aa1ffc1.js",
-    "static/js/703.d4adac93.chunk.js": "/build/static/js/703.d4adac93.chunk.js",
-    "static/js/696.f3b36e7d.chunk.js": "/build/static/js/696.f3b36e7d.chunk.js",
-    "static/js/787.ae2fb8aa.chunk.js": "/build/static/js/787.ae2fb8aa.chunk.js",
-    "index.html": "/build/index.html",
-    "main.b25d6f16.css.map": "/build/static/css/main.b25d6f16.css.map",
-    "main.8aa1ffc1.js.map": "/build/static/js/main.8aa1ffc1.js.map",
-    "703.d4adac93.chunk.js.map": "/build/static/js/703.d4adac93.chunk.js.map",
-    "696.f3b36e7d.chunk.js.map": "/build/static/js/696.f3b36e7d.chunk.js.map",
-    "787.ae2fb8aa.chunk.js.map": "/build/static/js/787.ae2fb8aa.chunk.js.map"
+    "main.css": "/janbeeangel.es/static/css/main.b25d6f16.css",
+    "main.js": "/janbeeangel.es/static/js/main.5e3c6379.js",
+    "static/js/703.d4adac93.chunk.js": "/janbeeangel.es/static/js/703.d4adac93.chunk.js",
+    "static/js/696.f3b36e7d.chunk.js": "/janbeeangel.es/static/js/696.f3b36e7d.chunk.js",
+    "static/js/787.ae2fb8aa.chunk.js": "/janbeeangel.es/static/js/787.ae2fb8aa.chunk.js",
+    "index.html": "/janbeeangel.es/index.html",
+    "main.b25d6f16.css.map": "/janbeeangel.es/static/css/main.b25d6f16.css.map",
+    "main.5e3c6379.js.map": "/janbeeangel.es/static/js/main.5e3c6379.js.map",
+    "703.d4adac93.chunk.js.map": "/janbeeangel.es/static/js/703.d4adac93.chunk.js.map",
+    "696.f3b36e7d.chunk.js.map": "/janbeeangel.es/static/js/696.f3b36e7d.chunk.js.map",
+    "787.ae2fb8aa.chunk.js.map": "/janbeeangel.es/static/js/787.ae2fb8aa.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b25d6f16.css",
-    "static/js/main.8aa1ffc1.js"
+    "static/js/main.5e3c6379.js"
   ]
 }
