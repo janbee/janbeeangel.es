@@ -1,7 +1,7 @@
 {
   "name": "janbee-cv",
-  "version": "1.0.19",
-  "homepage": "https://janbee.github.io/janbeeangel.es/build",
+  "version": "1.0.24",
+  "homepage": "https://janbeeangel.es/build",
   "private": true,
   "scripts": {
     "rm": "rm -rf node_modules && rm yarn.lock || rd /s /q node_modules",
@@ -43,6 +43,7 @@
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
+    "@types/gapi": "^0.0.42",
     "@typescript-eslint/eslint-plugin": "^5.33.0",
     "@typescript-eslint/parser": "^5.33.0",
     "craco-alias": "^3.0.1",

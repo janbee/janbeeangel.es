@@ -11,7 +11,6 @@ class State {
   loading = true;
   loaded = false;
 }
-
 export const AppComponent = () => {
   const [state, setState] = useState(new State());
   useEffect(() => {
