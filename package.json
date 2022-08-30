@@ -1,7 +1,7 @@
 {
   "name": "janbee-cv",
-  "version": "1.0.18",
-  "homepage": "https://janbee.github.io/janbeeangel.es",
+  "version": "1.0.19",
+  "homepage": "https://janbee.github.io/janbeeangel.es/build",
   "private": true,
   "scripts": {
     "rm": "rm -rf node_modules && rm yarn.lock || rd /s /q node_modules",
