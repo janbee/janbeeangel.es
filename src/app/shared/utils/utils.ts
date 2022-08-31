@@ -47,3 +47,23 @@ export const useApi = <T>(obs$: Observable<T>): { loading: boolean; data?: T } =
 
   return state;
 };
+
+export const useObservable = <T>(obs$: Observable<T>): T => {
+  const [state, setState] = useState<T>(null as unknown as T);
+
+  useEffect(() => {
+    const subs$ = obs$.subscribe((res) => {
+      if (Object(res) !== res) {
+        setState(res);
+      } else {
+        setState((prevState) => ({ ...prevState, ...res }));
+      }
+    });
+
+    return () => {
+      subs$.unsubscribe();
+    };
+  }, []);
+
+  return state;
+};

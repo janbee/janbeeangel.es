@@ -1,37 +1,47 @@
 import { ajax } from 'rxjs/internal/ajax/ajax';
-import { Buffer } from 'buffer';
-import { Host } from '@models/env';
+import { Config } from '@models/env';
 import { map } from 'rxjs';
-import { Store } from '@services/store.service';
 import { DataModel } from '@models/custom.models';
+import { camelCase, find } from 'lodash';
 
 class ApiService {
-  getMainRepoHash() {
-    const url = Host.MainRepo;
-    return ajax
-      .getJSON<{ target: { hash: string } }>(url, {
-        authorization: `Basic ${Buffer.from(Host.PersonalAccessToken, 'utf8').toString('base64')}`,
-      })
-      .pipe(
-        map((res) => {
-          Store.Hash = res.target.hash;
-          return res.target.hash;
-        })
-      );
-  }
-
   getDataJson() {
-    const url = `${Host.MainRepoSrc}/${Store.Hash}/src/assets/data/data.json`;
-    return ajax.getJSON<DataModel>(url, {
-      authorization: `Basic ${Buffer.from(Host.PersonalAccessToken, 'utf8').toString('base64')}`,
-    });
+    const url = `https://sheets.googleapis.com/v4/spreadsheets/${Config.GoogleSheetId}/?key=${Config.GoogleApi}&fields=sheets.properties,sheets.data.rowData.values.formattedValue`;
+    return ajax.getJSON<unknown>(url).pipe(
+      map((res) => {
+        const dataModel: DataModel = {} as DataModel;
+        // @ts-ignore
+        const nameAndIntro = find(res.sheets, ['properties.title', 'Name / Intro']);
+        dataModel.name = nameAndIntro.data[0].rowData[1].values[0].formattedValue;
+        dataModel.intro = nameAndIntro.data[0].rowData[1].values[1].formattedValue;
+
+        // @ts-ignore
+        res.sheets
+          // @ts-ignore
+          .filter((item) => item.properties.title !== 'Name / Intro')
+          // @ts-ignore
+          .forEach((item) => {
+            const key = camelCase(item.properties.title);
+
+            dataModel[key] = [];
+            // @ts-ignore
+            item.data[0].rowData.forEach((row, rowIndex) => {
+              if (rowIndex !== 0) {
+                const obj = {};
+                // @ts-ignore
+                row.values.forEach((val, valIndex) => {
+                  obj[item.data[0].rowData[0].values[valIndex].formattedValue] = val.formattedValue;
+                });
+
+                dataModel[key].push(obj);
+              }
+            });
+          });
+
+        return dataModel;
+      })
+    );
   }
 }
 
 export const API = new ApiService();
-/*
-curl $'https://bitbucket.org/\u0021api/2.0/repositories/janbee-angeles/janbee-angeles.bitbucket.io/refs/branches/master' \
-  -H 'authority: bitbucket.org' \
-  -H 'Authorization: Basic amFuYmVlYW5nZWxlczpBVEJCdlF0WnhZckE3UUNIeXZMSEtKY2JTdEF6OEIxOTlFQkU=' \
-  --compressed
-* */

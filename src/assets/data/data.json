@@ -66,18 +66,18 @@
       "company": "HSBC Electronic Data Processing",
       "position": "Web Developer",
       "duration": "Jul 2010 - Aug 2011",
-      "jobDescription": "Handles page/widget creation, and API/UI integrations. Project was built on VanillaJs and jQuery. ContentManagementSystem(<span>VanillaJs/jQuery</span>)"
+      "jobDescription": "Handles page/widget creation, and API/UI integrations. Project was built on VanillaJs and jQuery. ContentManagementSystem(<span>VanillaJs/jQuery</span>)."
     },
     {
       "company": "Escentrics IT Solutions",
       "position": "Web Developer",
       "duration": "Aug 2009 - Jul 2010",
-      "jobDescription": "Handles page/widget creation, been heavily involved with HTML, CSS, and JS for customizing websites. Projects were built on WordPress and Joomla. Sanctuaryo(<span>Joomla</span>), IlocosSur(<span>Joomla</span>) and PhilippinePetFinder(<span>Wordpress</span>)"
+      "jobDescription": "Handles page/widget creation, been heavily involved with HTML, CSS, and JS for customizing websites. Projects were built on WordPress and Joomla. Sanctuaryo(<span>Joomla</span>), IlocosSur(<span>Joomla</span>) and PhilippinePetFinder(<span>Wordpress</span>)."
     }
   ],
   "skills": [
     {
-      "name": "HTML / CSS ",
+      "name": "HTML / CSS",
       "level": 9
     },
     {
