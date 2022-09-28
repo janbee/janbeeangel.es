@@ -5,8 +5,7 @@ import { SkillsModel } from '@models/custom.models';
 import { orderBy } from 'lodash';
 
 export const SkillsComponent = (props: { items: SkillsModel[] }) => {
-  const sortedItem = orderBy(props.items, ['level', 'name'], ['desc', 'asc']);
-
+  const sortedItems = orderBy(props.items, ['level', 'name'], ['desc', 'asc']);
   return (
     <div className="skills-wrap">
       <div className="ttl">
@@ -14,7 +13,7 @@ export const SkillsComponent = (props: { items: SkillsModel[] }) => {
         <Divider />
       </div>
       <div className="content-wrap">
-        {sortedItem.slice(0, 10).map((item) => {
+        {sortedItems.slice(0, 10).map((item) => {
           return (
             <div key={item.name} className="skill-wrap">
               <span className="name">{item.name}</span>
@@ -33,7 +32,7 @@ export const SkillsComponent = (props: { items: SkillsModel[] }) => {
         <Divider />
         <div className="content-wrap">
           <span className="other-skills">
-            {sortedItem
+            {sortedItems
               .slice(10)
               .map((item) => item.name)
               .join(', ')}
