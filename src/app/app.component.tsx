@@ -10,8 +10,7 @@ import { useObservable } from '@utilities/utils';
 export const AppComponent = () => {
   const loading = useObservable(Store.Loading$);
   const webFontsLoaded = useFontFaceObserver([{ family: `quicksand` }]);
-
-  console.log('AppComponent ------------------------------------- render', loading);
+  console.log('AppComponent -------- ------- ------render');
   return (
     <div className="container">
       <LoaderComponent loading={!webFontsLoaded || loading} />

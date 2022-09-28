@@ -6,6 +6,7 @@ import { orderBy } from 'lodash';
 
 export const SkillsComponent = (props: { items: SkillsModel[] }) => {
   const sortedItems = orderBy(props.items, ['level', 'name'], ['desc', 'asc']);
+
   return (
     <div className="skills-wrap">
       <div className="ttl">

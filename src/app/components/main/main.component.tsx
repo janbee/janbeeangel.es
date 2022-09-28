@@ -64,7 +64,6 @@ export const MainComponent = memo(() => {
 
   if (!state.data) return null;
 
-  console.log('render----------------------------------');
   return (
     <div className="main-wrap">
       {!state.loading && (
