@@ -18,6 +18,8 @@ import { useApi } from '@utilities/utils';
 export const MainComponent = memo(() => {
   const state = useApi<DataModel>(API.getDataJson());
 
+  console.log('gaga-------------------------------------', state);
+
   useEffect(() => {
     if (state.loading) {
       Store.Loading$.next(true);
